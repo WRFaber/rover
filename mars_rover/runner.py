@@ -1,11 +1,10 @@
-import torch 
-import numpy as np 
-from tqdm import tqdm
-
+import matplotlib.pyplot as plt
+import numpy as np
+import torch
 from helpers import gradients_wrt_params, update_params
 from policy import PolicyNet
 from terrain import Terrain
-import matplotlib.pyplot as plt
+from tqdm import tqdm
 
 ACTIONS = ["up", "down", "left", "right"]
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -63,12 +62,12 @@ lr_policy_net = 2**-16
 optimizer = torch.optim.Adam(policy_net.parameters(), lr=lr_policy_net)
 
 prefix = "reinforce-per-step"
-n = 100
-m = 100
+n = 5
+m = 5
 exit_pos = (4,4)
 
 
-for episode_num in tqdm(range(100)):
+for episode_num in tqdm(range(1000)):
     all_iterations = []
     all_log_probs = []    
     initial_position = initialize_starting_place(n,m,exit_pos)
