@@ -13,6 +13,6 @@ Teaching simulated systems to decide based on RL techniques.
     - it should point to your local folder 
     - if this is not working switch to bash terminal and run source full path to the environments activate file. 
 4. to install GPU enhanced torch follow these steps
-    - pip install cuda-python
+    - pip install cuda-python matplotlib tqdm
     - pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121 (Note this is due to the fact that the torch has to line up with cuda to get best gpu performance. At the time I am writing this cuda is at 12.2 and 
       torch is at 12.1 support. Thus I am using the latest nightly build rather than the stable version of torch)

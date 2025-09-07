@@ -1,5 +1,5 @@
 import torch
-import numpy as np
+
 
 class Terrain:
     def __init__(self, n, m, exit_pos, figure_pos):
