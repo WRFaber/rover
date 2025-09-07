@@ -26,7 +26,7 @@ Example 2: Is intended to work with the actual Perseverance microrover by circui
 ## Results
 | Early Rover Path Before Training Process | Rover Path Midway Throug Training Process|
 | :-------------------------:|:-------------------------: |
-| ![](Path_e9000.png) |  ![](Path_e27000) |
+| ![](Path_e9000.png) |  ![](Path_e27000.png) |
 
 | Rover Reward vs. Time  | Rover Ave Grids Explored Throughtout Training|
 | :-------------------------:|:-------------------------: |
