@@ -1,4 +1,4 @@
-# Seeker an DRL tutorial in torch
+# Microver an DRL tutorial in torch
 
 Teaching simulated systems to decide based on RL techniques.
 
