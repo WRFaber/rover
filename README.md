@@ -42,12 +42,18 @@ Key mechanics include:
 
         Heavier penalties for failing to return before the sandstorm.
 
+🧠 Example 3: Sim-to-Real gap closure for Microver Perseption Rover implementation 
+
+Similar to use case in Example 2 without the grid and with uncertainty added. 
+
 This setup encourages strategic exploration and inference, simulating a more intelligent and reactive rover behavior.
 🧭 TL;DR:
 
     Example 1 is a classic sequential decision making problem with deterministic transitions and partial observability, focused on shortest-path navigation.
 
     Example 2 introduces real-world complexity using a programmable rover, Aruco markers, and a dynamic terrain with hidden dependencies, emphasizing exploration, inference, and survival under time constraints.
+
+    Example 3 is more complex and is the baseline environment for the Perseption Rover
 
 ## Usage
 - Each example has a runner. Simply run this file to train from scratch.
@@ -56,7 +62,7 @@ This setup encourages strategic exploration and inference, simulating a more int
 ## Citing
 
 
-## Results
+## Results Mars Rover
 | Early Rover Path Before Training Process | Rover Path Midway Throug Training Process|
 | :-------------------------:|:-------------------------: |
 | ![](Path_e9000.png) |  ![](Path_e27000.png) |
@@ -64,6 +70,15 @@ This setup encourages strategic exploration and inference, simulating a more int
 | Rover Reward vs. Time  | Rover Ave Grids Explored Throughtout Training|
 | :-------------------------:|:-------------------------: |
 | ![](Time_Reward.png) |  ![](Time.png) |
+
+## Results Mars microver
+| Early Rover Path Before Training Process | Rover Path Midway Throug Training Process|
+| :-------------------------:|:-------------------------: |
+| ![](Micro_Path_e2500.png) |  ![](Micro_Path_e15000.png) |
+
+| Rover Reward vs. Time  | Rover Exploration Time Spent Throughtout Training|
+| :-------------------------:|:-------------------------: |
+| ![](Micro_Time_Reward.png) |  ![](Micro_Time_SearchLength.png) |
 
 
 ## Other Setup and dependencies
